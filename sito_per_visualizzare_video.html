@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f172a;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .container {
+      max-width: 900px;
+      width: 90%;
+      background: #020617;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+      background: black;
+    }
+    p {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Guarda il video</h1>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Il tuo browser non supporta il tag video.
+    </video>
+    <p>Clicca play per avviare il video</p>
+  </div>
+</body>
+</html>
